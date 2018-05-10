@@ -26,12 +26,12 @@ namespace Assets
 
 			if (Input.GetKey("d") || Input.GetKey("right"))
 			{
-				rb.AddForce(sidewaysForce * delta, 0, 0);
+				rb.AddForce(sidewaysForce * delta, 0, 0, ForceMode.VelocityChange);
 			}
 
 			if (Input.GetKey("a") || Input.GetKey("left"))
 			{
-				rb.AddForce(-sidewaysForce * delta, 0, 0);
+				rb.AddForce(-sidewaysForce * delta, 0, 0, ForceMode.VelocityChange);
 			}
 
 		}
